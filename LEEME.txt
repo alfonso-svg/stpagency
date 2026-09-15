@@ -1,0 +1,18 @@
+STP Agency - sitio web
+======================
+
+Esta carpeta es el sitio completo. Se publica tal cual, sin compilar nada.
+
+  index.html            la pagina
+  assets/img/           imagenes
+  assets/fonts/         tipografias
+  favicon, manifest     iconos del navegador
+  robots.txt            instrucciones para buscadores
+  sitemap.xml           mapa del sitio
+
+PENDIENTE ANTES DE PUBLICAR
+---------------------------
+En index.html, el formulario tiene action="ENDPOINT_PENDIENTE".
+Hasta que se reemplace por una direccion real, al pulsar Enviar el
+formulario avisa al visitante que escriba a hello@stptheagency.com
+en lugar de fingir que envio el mensaje.
