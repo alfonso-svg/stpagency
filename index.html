@@ -638,10 +638,12 @@ footer{background:var(--ink);padding-block:48px;border-top:1px solid var(--line)
         <p class="lede" style="margin-top:24px">Escríbenos y te respondemos con una primera lectura del problema. Sin presentación de 40 slides.</p>
       </div>
       <div class="rv col-form">
-        <form id="form-contacto" action="ENDPOINT_PENDIENTE" method="POST">
-          <div class="field"><label for="n">Nombre</label><input id="n" type="text" autocomplete="name"></div>
-          <div class="field"><label for="e">Email</label><input id="e" type="email" autocomplete="email"></div>
-          <div class="field"><label for="m">Mensaje</label><textarea id="m" rows="4"></textarea></div>
+        <form id="form-contacto" action="https://formspree.io/f/xqpaddle" method="POST">
+          <div class="field"><label for="n">Nombre</label><input id="n" name="nombre" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="m">Mensaje</label><textarea id="m" name="mensaje" rows="4" required></textarea></div>
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde stptheagency.com">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
           <button class="btn" type="submit">Enviar</button>
         </form>
         <div class="offices">
@@ -664,7 +666,7 @@ footer{background:var(--ink);padding-block:48px;border-top:1px solid var(--line)
   aviso.style.cssText = "margin:14px 0 0;font-size:.85rem;color:#5B5654";
   f.appendChild(aviso);
   f.addEventListener("submit", function(e){
-    if (f.getAttribute("action") === "ENDPOINT_PENDIENTE") {
+    if (f.getAttribute("action").indexOf("PENDIENTE") > -1) {
       e.preventDefault();
       aviso.textContent = "El formulario todav\u00eda no est\u00e1 conectado. Escr\u00edbenos a hello@stptheagency.com";
       return;
