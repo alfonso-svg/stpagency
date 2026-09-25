@@ -1,0 +1,754 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STP Agency | Marketing integral sin rodeos</title>
+<meta name="description" content="Agencia de marketing integral. Estrategia, creatividad, pauta, producción y data en un solo equipo que trabaja de la mano con tu negocio.">
+<link rel="canonical" href="https://stptheagency.com/">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="STP Agency">
+<meta property="og:title" content="STP Agency | Marketing integral sin rodeos">
+<meta property="og:description" content="Estrategia, creatividad, pauta, producción y data en un solo equipo que trabaja de la mano con tu negocio.">
+<meta property="og:url" content="https://stptheagency.com/">
+<meta property="og:image" content="https://stptheagency.com/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/anthem-black.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/anthem-light.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/anthem-bold.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/lt-superior-medium.woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/banner-fondo.jpg" fetchpriority="high">
+<style>
+/* tipografias de marca */
+@font-face{font-family:"LT Superior";src:url("assets/fonts/lt-superior-medium.woff2") format("woff2");font-weight:100 600;font-style:normal;font-display:swap}
+@font-face{font-family:"NV Anthem";src:url("assets/fonts/anthem-light.woff2") format("woff2");font-weight:100 300;font-style:normal;font-display:swap}
+@font-face{font-family:"NV Anthem";src:url("assets/fonts/anthem-bold.woff2") format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"NV Anthem";src:url("assets/fonts/anthem-black.woff2") format("woff2");font-weight:900;font-style:normal;font-display:swap}
+:root{
+  --ink:#000000;
+  --ink-2:#070707;
+  --paper:#EFECEA;
+  --red:#B41717;
+  --red-hot:#DD1B1B;
+  --smoke:#8B8583;
+  --smoke-2:#5B5654;
+  --line:rgba(255,255,255,.15);
+  --line-dark:rgba(0,0,0,.16);
+  --display:"NV Anthem","LT Superior","Helvetica Neue",Arial,sans-serif;
+  --body:"LT Superior","Helvetica Neue",Arial,sans-serif;
+  --wrap:1420px;
+  --pad:clamp(20px,4.5vw,72px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--ink);color:#fff;
+  font-family:var(--body);font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  font-synthesis-weight:none;font-synthesis-style:none;
+}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--red-hot);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--pad)}
+
+h1,h2,h3,h4{font-family:var(--display);margin:0;text-wrap:balance}
+h1{font-weight:400;font-size:clamp(1.3rem,5.25vw,4.7rem);line-height:1.02;letter-spacing:-.01em;text-transform:uppercase}
+h2{font-weight:900;font-size:clamp(1.55rem,3.3vw,2.95rem);line-height:1.08;letter-spacing:-.025em;text-transform:uppercase}
+.lede{font-size:clamp(1rem,1.35vw,1.16rem);color:#CDC9C7;line-height:1.62;max-width:52ch}
+
+/* section marker taken from their deck: red vertical rule + label */
+.marker{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+.marker i{display:block;width:3px;height:26px;background:var(--red)}
+.marker span{
+  font-family:var(--display);font-weight:600;font-size:.7rem;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--smoke);
+}
+
+.btn{
+  font-family:var(--display);font-weight:700;font-size:.78rem;letter-spacing:.12em;
+  text-transform:uppercase;text-decoration:none;display:inline-flex;align-items:center;gap:10px;
+  padding:15px 26px;border:1px solid var(--red);background:var(--red);color:#fff;
+  transition:background .2s,border-color .2s;
+}
+.btn:hover{background:var(--red-hot);border-color:var(--red-hot)}
+.btn .dot{width:7px;height:7px;border-radius:50%;background:#fff}
+.btn-ghost{background:transparent;border-color:rgba(255,255,255,.3)}
+.btn-ghost:hover{background:rgba(255,255,255,.08);border-color:#fff}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:60;background:linear-gradient(to bottom,rgba(0,0,0,.8),transparent)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:24px;height:82px}
+.brand img{width:96px}
+nav{display:flex;gap:32px}
+nav a{font-family:var(--display);font-weight:500;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#C9C5C3}
+nav a:hover{color:#fff}
+.burger{display:none;width:44px;height:44px;border:1px solid rgba(255,255,255,.28);background:transparent;
+  border-radius:3px;cursor:pointer;padding:0;place-items:center;flex:none}
+.burger i{display:block;width:20px;height:2px;background:#fff;position:relative;transition:background .2s}
+.burger i::before,.burger i::after{content:"";position:absolute;left:0;width:20px;height:2px;background:#fff;
+  transition:transform .3s cubic-bezier(.2,.7,.3,1),top .3s}
+.burger i::before{top:-6px}.burger i::after{top:6px}
+body.menu-open .burger i{background:transparent}
+body.menu-open .burger i::before{top:0;transform:rotate(45deg)}
+body.menu-open .burger i::after{top:0;transform:rotate(-45deg)}
+@media(max-width:960px){
+  nav{
+    position:fixed;inset:0;background:#000;flex-direction:column;justify-content:center;
+    gap:8px;padding:0 var(--pad);z-index:59;
+    opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;
+  }
+  body.menu-open nav{opacity:1;visibility:visible}
+  nav a{font-size:1.6rem;font-weight:900;letter-spacing:-.02em;color:#fff;padding:14px 0;
+    border-bottom:1px solid rgba(255,255,255,.12);opacity:0;transform:translateY(14px)}
+  body.menu-open nav a{animation:navIn .4s cubic-bezier(.2,.7,.3,1) both}
+  body.menu-open nav a:nth-child(1){animation-delay:.06s}
+  body.menu-open nav a:nth-child(2){animation-delay:.12s}
+  body.menu-open nav a:nth-child(3){animation-delay:.18s}
+  body.menu-open nav a:nth-child(4){animation-delay:.24s}
+  .burger{display:grid}
+  /* el nav es hijo de la cabecera: sus hermanos necesitan contexto propio para quedar por encima */
+  .brand,.burger,.bar>.btn{position:relative;z-index:61}
+  body.menu-open{overflow:hidden}
+  body.menu-open .bar>.btn{opacity:0;pointer-events:none}
+}
+@keyframes navIn{to{opacity:1;transform:none}}
+
+/* hero */
+.hero{position:relative;min-height:92svh;display:flex;align-items:flex-end;padding-block:120px 58px;overflow:hidden}
+@media(max-width:560px){
+  .bar{gap:10px}
+  .brand img{width:74px}
+  .bar>.btn{padding:12px 14px;font-size:.66rem;letter-spacing:.08em;transition:opacity .25s}
+  .bar>.btn .dot{width:5px;height:5px}
+  .burger{width:40px;height:40px}
+}
+@media(max-width:700px){
+  .hero{min-height:auto;padding-block:132px 44px}
+  .wordmark{width:86%;margin-bottom:22px}
+  .hero-bg{background-position:62% 40%}
+}
+.wordmark{width:min(720px,72%);margin-bottom:clamp(36px,5.2vw,74px)}
+.hero-bg{position:absolute;inset:0;background:url("assets/img/banner-fondo.jpg") center/cover no-repeat;background-position:70% 45%}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(95deg,rgba(0,0,0,.94),rgba(0,0,0,.7) 38%,rgba(0,0,0,.05) 72%,rgba(0,0,0,.4))}
+.hero .wrap{position:relative;width:100%}
+.hero h1 span{display:block}
+/* prueba NV Anthem Grotesk: linea 1 Black en caja alta, linea 2 Light en minusculas */
+.hero h1 .l1{font-family:"NV Anthem",var(--body);font-weight:900;letter-spacing:-.025em}
+.hero h1 .l2{font-family:"NV Anthem",var(--body);font-weight:300;font-style:normal;text-transform:uppercase;font-size:.858em;letter-spacing:-.015em;line-height:1.06;display:block;margin-top:.12em}
+/* el bloque se ajusta al ancho del título y el subtexto lo acompaña exactamente */
+.hero-copy{width:fit-content;max-width:100%}
+.hero-lede{width:0;min-width:100%;margin-top:clamp(18px,2.3vw,32px)}
+.hero-lede .lede{max-width:none}
+@media(max-width:900px){.hero-copy{width:auto}.hero-lede{width:auto;min-width:0}}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+
+/* strips */
+.strip{border-block:1px solid var(--line);padding-block:30px;overflow:hidden;background:var(--ink)}
+.marquee{display:flex;width:max-content;animation:slide 40s linear infinite}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.mq{display:flex;align-items:center;padding-inline:clamp(22px,2.4vw,40px);flex:none}
+.mq img{width:auto;max-width:184px;object-fit:contain;opacity:.78;transition:opacity .3s}
+.mq:hover img{opacity:1}
+.strip:hover .marquee{animation-play-state:paused}
+.qcard-ph .qtext{color:#8B8583;font-style:italic}
+.qcard-ph .qm{opacity:.35}
+
+.quotes{padding:46px 0 54px;overflow:hidden;border-bottom:1px solid var(--line);perspective:1200px}
+@media(hover:none){
+  .quotes{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;padding-inline:var(--pad)}
+  .quotes::-webkit-scrollbar{display:none}
+  .qtrack{animation:none;gap:16px}
+  .qcard{scroll-snap-align:center;transform:none;width:min(420px,86vw);min-height:0}
+}
+.qtrack{display:flex;gap:26px;width:max-content;animation:slide 70s linear infinite;transform-style:preserve-3d}
+.quotes:hover .qtrack{animation-play-state:paused}
+.qcard{
+  position:relative;overflow:hidden;
+  width:min(470px,84vw);min-height:300px;padding:30px 32px 26px;
+  background:#0A0909;
+  border:1px solid rgba(255,255,255,.1);border-left:3px solid var(--red);
+  box-shadow:0 34px 60px rgba(0,0,0,.72),0 6px 16px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.09);
+  display:flex;flex-direction:column;justify-content:flex-end;gap:16px;
+  transform:translateZ(0) rotateY(1.5deg);transition:transform .45s cubic-bezier(.2,.7,.3,1),box-shadow .45s;
+}
+.qcard::before{
+  content:"";position:absolute;inset:0;z-index:0;
+  background-image:var(--bg);background-size:cover;background-position:center;
+  opacity:1;filter:saturate(.55) contrast(1.05);
+  transition:filter .45s,transform .8s cubic-bezier(.2,.7,.3,1);
+}
+.qcard::after{
+  content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(8,7,7,.34) 0%,rgba(8,7,7,.70) 34%,rgba(8,7,7,.94) 66%,rgba(8,7,7,.985) 100%);
+}
+.qcard>*{position:relative;z-index:2}
+.qcard:hover{transform:translateY(-8px) translateZ(40px) rotateY(0);box-shadow:0 54px 90px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.14)}
+.qcard:hover::before{filter:saturate(1) contrast(1.05);transform:scale(1.05)}
+.qm{
+  font-family:var(--display);font-weight:900;font-size:4.2rem;line-height:.5;
+  color:var(--red);opacity:.85;align-self:flex-start;margin-bottom:-6px;
+}
+.qtext{font-size:.92rem;color:#E9E6E4;margin:0;line-height:1.6;text-shadow:0 1px 12px rgba(0,0,0,.55)}
+.qwho{font-family:var(--display);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;margin:0;padding-top:12px;border-top:1px solid rgba(255,255,255,.16)}
+.qwho span{color:#A8A2A0}
+
+section{padding-block:clamp(80px,9vw,140px);position:relative}
+@media(max-width:700px){
+  section{padding-block:60px}
+  .marker{margin-bottom:18px}
+  .lede{line-height:1.55}
+  .mosaic{gap:10px}
+  .tile{padding:16px 18px}
+}
+
+/* textured sections */
+.tex{position:relative;isolation:isolate}
+.tex::before{content:"";position:absolute;inset:0;z-index:-2;background-size:cover;background-position:center}
+.tex::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.72) 55%,rgba(0,0,0,.86))}
+.tex-slats::before{background-image:url("assets/img/textura-listones.jpg")}
+.tex-sand::before{background-image:url("assets/img/textura-arena.jpg")}
+.tex-sand{overflow-x:clip}
+.tex-white::before{background-image:url("assets/img/textura-listones-blanca.jpg")}
+.tex-white::after{background:linear-gradient(100deg,rgba(255,255,255,.9),rgba(255,255,255,.66) 50%,rgba(255,255,255,.9))}
+
+/* light section variant */
+.sec-light{color:#151212}
+.sec-light h2{color:#151212}
+.sec-light .marker span{color:#5B5654}
+.sec-light .tl-col{border-color:rgba(0,0,0,.14)}
+.sec-light .tl-head{color:#5B5654;border-bottom-color:rgba(0,0,0,.14);background:rgba(0,0,0,.045)}
+.sec-light .tl-card{
+  background:linear-gradient(158deg,#FFFFFF 0%,#FAF8F7 44%,#EFEBE9 100%);
+  border:1px solid rgba(0,0,0,.09);border-left:3px solid var(--red);
+  box-shadow:
+    0 2px 3px rgba(20,10,10,.05),
+    0 12px 22px rgba(20,10,10,.09),
+    0 34px 56px rgba(20,10,10,.13),
+    inset 0 1px 0 rgba(255,255,255,.95);
+  transform:rotateY(1.4deg);
+  transition:transform .45s cubic-bezier(.2,.7,.3,1),box-shadow .45s;
+}
+.sec-light .tl-card:hover{
+  transform:translateY(-8px) rotateY(0);
+  box-shadow:0 6px 8px rgba(20,10,10,.06),0 22px 36px rgba(20,10,10,.12),0 56px 84px rgba(20,10,10,.18),inset 0 1px 0 #fff;
+}
+.sec-light .tl-card h3{color:#151212}
+.sec-light .tl-card .n{color:var(--red)}
+.sec-light .tl-card li{color:#5B5654}
+.sec-light .tl{perspective:1400px}
+.sec-light .tl-col{transform-style:preserve-3d}
+
+/* agency: headline left, big numbers right */
+.agency{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(30px,4vw,64px);align-items:center}
+@media(max-width:960px){.agency{grid-template-columns:1fr}}
+.mosaic{width:100%;display:grid;grid-template-columns:1.18fr .82fr;grid-auto-rows:minmax(150px,auto);gap:12px}
+@media(max-width:620px){.mosaic{grid-template-columns:1fr}}
+.tile{
+  border-radius:18px;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;overflow:hidden;
+}
+.tile .meta{max-width:24ch}
+.tile .lab{font-family:var(--display);font-weight:800;font-size:.88rem;letter-spacing:.04em;text-transform:uppercase;margin-bottom:5px}
+.tile .desc{font-size:.79rem;line-height:1.4;opacity:.78}
+.tile .big{
+  font-family:var(--display);font-weight:900;font-size:clamp(2.6rem,5.1vw,4.1rem);line-height:.86;
+  letter-spacing:-.04em;font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+.t-red{background:var(--red);color:#fff}
+.t-deep{background:#6E1010;color:#fff}
+.t-ash{background:#1A1818;color:#fff;border:1px solid rgba(255,255,255,.12)}
+.t-paper{background:#E9E5E2;color:#151212}
+
+/* services: índice con panel lateral */
+.svc{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(30px,5vw,80px);align-items:start}
+@media(max-width:900px){.svc{grid-template-columns:1fr}}
+.slist{border-top:1px solid var(--line)}
+.sitem{
+  width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);
+  color:inherit;cursor:pointer;padding:clamp(14px,1.6vw,22px) 0;font-family:inherit;
+  display:grid;grid-template-columns:46px 1fr 22px;align-items:center;gap:16px;
+}
+.sitem .n{font-family:var(--display);font-weight:600;font-size:.72rem;letter-spacing:.14em;color:var(--smoke-2);transition:color .25s}
+.sitem .name{
+  font-family:var(--display);font-weight:800;text-transform:uppercase;
+  font-size:clamp(1.1rem,2.3vw,1.85rem);line-height:1.04;letter-spacing:-.025em;color:#fff;
+  transition:color .25s,transform .35s cubic-bezier(.2,.7,.3,1);
+}
+.sitem .arrow{width:22px;height:2px;background:#fff;opacity:0;transform:translateX(-10px);justify-self:end;position:relative;
+  transition:opacity .25s,transform .35s cubic-bezier(.2,.7,.3,1),background .25s}
+.sitem .arrow::after{content:"";position:absolute;right:0;top:-4px;width:10px;height:10px;border-top:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg);transition:border-color .25s}
+.sitem:hover .name,.sitem.on .name{color:var(--red-hot);transform:translateX(8px)}
+.sitem:hover .n,.sitem.on .n{color:var(--red)}
+.sitem.on .arrow,.sitem:hover .arrow{opacity:1;transform:translateX(0);background:var(--red-hot)}
+.sitem.on .arrow::after,.sitem:hover .arrow::after{border-color:var(--red-hot)}
+.slist:hover .sitem:not(:hover) .name{color:#6E6866}
+.spanel{position:sticky;top:110px}
+.sframe{position:relative;aspect-ratio:4/3;overflow:hidden;border:1px solid var(--line);background:#0A0909}
+.sframe img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);
+  transition:opacity .5s ease,transform 1.1s cubic-bezier(.2,.7,.3,1)}
+.sframe img.on{opacity:1;transform:scale(1)}
+.sframe::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.28));pointer-events:none}
+.scopy{padding-top:24px;min-height:170px}
+.scopy p{margin:0;color:#CDC9C7;font-size:1rem;max-width:46ch}
+.scopy .lines{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:20px;padding:0;list-style:none}
+.scopy .lines li{font-family:var(--display);font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--smoke)}
+.scopy .lines li::before{content:"/ ";color:var(--red)}
+.sfade{animation:sin .45s ease both}
+@keyframes sin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.sbody{display:none}
+@media(max-width:900px){
+  .spanel{display:none}
+  .sitem{grid-template-columns:40px 1fr 22px}
+  .sitem:hover .name{transform:none}
+  .slist .sitem.on+.sbody{display:block;padding:0 0 26px;animation:sin .35s ease both}
+  .slist .sbody img{margin-bottom:16px;border:1px solid var(--line)}
+  .slist .sbody p{margin:0;color:#CDC9C7;font-size:.96rem}
+}
+
+/* timeline */
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.tl::after{
+  content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--red);
+  transform:scaleX(0);transform-origin:left;transition:transform 1.5s cubic-bezier(.2,.7,.3,1) .15s;
+}
+.tl.in::after{transform:scaleX(1)}
+.tl .tl-card{opacity:0;transform:translateY(26px)}
+.tl.in .tl-card{animation:stepIn .7s cubic-bezier(.2,.7,.3,1) both}
+.tl.in .tl-col:nth-child(1) .tl-card{animation-delay:.25s}
+.tl.in .tl-col:nth-child(2) .tl-card{animation-delay:.55s}
+.tl.in .tl-col:nth-child(3) .tl-card{animation-delay:.85s}
+.tl.in .tl-col:nth-child(4) .tl-card{animation-delay:1.15s}
+@keyframes stepIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.tl-col{border-left:1px solid var(--line);padding:0 0 0 0;min-height:430px}
+.tl-col:last-child{border-right:1px solid var(--line)}
+.tl-head{
+  font-family:var(--display);font-weight:600;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--smoke);padding:12px 16px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.03);
+}
+.tl-card{
+  margin:16px;background:var(--ink);border:1px solid rgba(255,255,255,.22);
+  border-left:3px solid var(--red);padding:20px 18px;display:flex;flex-direction:column;gap:12px;
+}
+.tl-col:nth-child(1) .tl-card{margin-top:16px}
+.tl-col:nth-child(2) .tl-card{margin-top:94px}
+.tl-col:nth-child(3) .tl-card{margin-top:172px}
+.tl-col:nth-child(4) .tl-card{margin-top:250px}
+@media(max-width:820px){
+  .tl{grid-template-columns:1fr}
+  .tl::after{display:none}
+  .tl-col,.sec-light .tl-col{border-left:0;border-right:0;min-height:0;border-top:2px solid var(--red)}
+  .tl-col+.tl-col{margin-top:22px}
+  .tl-head,.sec-light .tl-head{border-bottom:0;background:transparent;padding:14px 0 0}
+  .tl-col .tl-card{margin:8px 0 0!important}
+}
+
+.tl-card .n{font-family:var(--display);font-weight:900;font-size:1.1rem;color:var(--red);letter-spacing:-.02em}
+.tl-card h3{font-weight:800;font-size:1.18rem;letter-spacing:-.01em;text-transform:uppercase}
+.tl-card ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:5px}
+.tl-txt{margin:0;font-size:.88rem;line-height:1.5;color:#4A4644}
+.tl-card li{font-size:.8rem;letter-spacing:.03em;text-transform:uppercase;color:var(--smoke);font-family:var(--display);font-weight:500}
+@media(max-width:900px){
+  .tl{grid-template-columns:1fr}
+  .tl-col{min-height:0;border-left:0;border-top:1px solid var(--line)}
+  .tl-col:last-child{border-right:0;border-bottom:1px solid var(--line)}
+  .tl-col .tl-card{margin:16px 0 22px!important}
+}
+
+/* data + phone */
+.data{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:clamp(36px,6vw,90px);align-items:center}
+@media(max-width:960px){.data{grid-template-columns:minmax(0,1fr)}}
+.scene{perspective:1700px;perspective-origin:58% 42%;padding:34px 0 46px}
+.deck{position:relative;transform-style:preserve-3d;transform:rotateX(9deg) rotateY(-19deg) rotateZ(1.5deg);transition:transform .8s cubic-bezier(.2,.7,.3,1)}
+.scene:hover .deck{transform:rotateX(5deg) rotateY(-11deg) rotateZ(.5deg)}
+.pane{
+  background:linear-gradient(155deg,#171414,#0A0909 62%);
+  border:1px solid rgba(255,255,255,.15);border-radius:14px;
+  box-shadow:0 70px 130px rgba(0,0,0,.85),0 10px 34px rgba(0,0,0,.6);
+}
+.pane-main{display:grid;grid-template-columns:52px 1fr;min-height:330px}
+.rail{border-right:1px solid rgba(255,255,255,.1);padding:16px 0;display:flex;flex-direction:column;align-items:center;gap:14px}
+.rail i{width:18px;height:18px;border-radius:5px;background:rgba(255,255,255,.14);display:block}
+.rail i.on{background:var(--red)}
+.pmain{padding:18px 20px 22px;display:flex;flex-direction:column;gap:16px}
+.ptop{display:flex;justify-content:space-between;align-items:baseline}
+.ptop b{font-family:var(--display);font-weight:800;font-size:1.05rem;letter-spacing:-.01em}
+.ptop span{font-size:.66rem;color:var(--smoke);font-family:var(--display);letter-spacing:.14em;text-transform:uppercase}
+.prow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.pkpi{border:1px solid rgba(255,255,255,.1);border-radius:9px;padding:11px 12px}
+.pkpi .k{font-family:var(--display);font-size:.56rem;letter-spacing:.15em;text-transform:uppercase;color:var(--smoke)}
+.pkpi .v{font-family:var(--display);font-weight:900;font-size:1.28rem;letter-spacing:-.03em;font-variant-numeric:tabular-nums;margin-top:3px}
+.pkpi .v em{font-style:normal;font-size:.62rem;color:var(--red);margin-left:6px;letter-spacing:.04em}
+.chart{display:flex;align-items:flex-end;gap:6px;height:112px}
+.chart i{flex:1;background:rgba(255,255,255,.14);border-radius:3px 3px 0 0;display:block}
+.chart i.hi{background:var(--red)}
+.axis{display:flex;justify-content:space-between;font-family:var(--display);font-size:.54rem;letter-spacing:.12em;text-transform:uppercase;color:var(--smoke-2)}
+.float{position:absolute;padding:14px 16px;border-radius:12px;background:linear-gradient(150deg,#1C1818,#0C0B0B);border:1px solid rgba(255,255,255,.18);box-shadow:0 40px 70px rgba(0,0,0,.7)}
+.f1{top:-30px;right:-26px;transform:translateZ(120px);width:170px}
+.f2{bottom:-34px;left:-30px;transform:translateZ(180px);width:196px}
+.f3{bottom:64px;right:-52px;transform:translateZ(70px);width:132px}
+.float .k{font-family:var(--display);font-size:.55rem;letter-spacing:.16em;text-transform:uppercase;color:var(--smoke)}
+.float .v{font-family:var(--display);font-weight:900;font-size:1.5rem;letter-spacing:-.03em;font-variant-numeric:tabular-nums;margin-top:4px}
+.ring{width:56px;height:56px;border-radius:50%;margin-top:8px;background:conic-gradient(var(--red) 0 68%,rgba(255,255,255,.12) 68% 100%);display:grid;place-items:center}
+.ring b{width:38px;height:38px;border-radius:50%;background:#0C0B0B;display:grid;place-items:center;font-family:var(--display);font-size:.66rem;font-weight:800}
+.spark{display:flex;align-items:flex-end;gap:3px;height:34px;margin-top:8px}
+.spark i{flex:1;background:var(--red);opacity:.5;border-radius:2px}
+.spark i:last-child{opacity:1}
+.fakenote{font-family:var(--display);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.34);text-align:center;margin-top:20px}
+@media(max-width:960px){
+  .scene{perspective:none;padding:10px 0}
+  .deck{transform:none}
+  .float{position:static;transform:none;width:auto;margin-top:10px}
+}
+@media(max-width:700px){
+  .pane-main{grid-template-columns:1fr;min-height:0}
+  .rail{flex-direction:row;justify-content:flex-start;border-right:0;border-bottom:1px solid rgba(255,255,255,.1);padding:12px 18px;gap:10px}
+  .pmain{padding:16px 16px 20px}
+  .ptop{flex-wrap:wrap;gap:4px}
+  .prow{grid-template-columns:1fr 1fr}
+  .prow .pkpi:first-child{grid-column:1 / -1}
+  .chart{height:86px}
+  .axis{font-size:.5rem}
+  .float{width:100%}
+  .fakenote{margin-top:14px}
+}
+
+/* work */
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:860px){.work{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.work{grid-template-columns:1fr}}
+.case{aspect-ratio:4/5;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:flex-end;padding:22px;gap:5px;position:relative;overflow:hidden;background:#080707}
+.case::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(180,23,23,.32),transparent 55%);opacity:.6;transition:opacity .35s}
+.case:hover::before{opacity:1}
+.case span,.case h3,.case .ph{position:relative}
+.case span{font-family:var(--display);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--smoke)}
+.case h3{font-weight:900;font-size:1.5rem;letter-spacing:-.02em;text-transform:uppercase}
+.case .ph{font-family:var(--display);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.32);margin-top:4px}
+
+/* contact */
+.contact{background:var(--paper);color:#131111;padding-bottom:0}
+.contact .inner{display:grid;grid-template-columns:1.05fr .95fr;gap:0 clamp(34px,6vw,86px);align-items:start}
+.contact .col-text{grid-column:1;grid-row:1}
+.contact .col-form{grid-column:2;grid-row:1 / span 2}
+.contact .dogwrap{grid-column:1;grid-row:2;align-self:end}
+@media(max-width:860px){
+  /* el perro cierra la seccion: debajo del formulario y pegado al pie */
+  .contact .inner{display:flex;flex-direction:column}
+  .contact .col-text{order:1}
+  .contact .col-form{order:2}
+  .contact .dogwrap{order:3;margin-top:46px;margin-bottom:0}
+  .contact .dogwrap img{width:min(360px,82%);margin-inline:auto}
+}
+.contact h2{color:#131111}
+.contact .marker span{color:var(--smoke-2)}
+.contact .lede{color:#3B3735}
+.dogwrap{margin-top:30px;margin-bottom:-2px}
+.dogwrap img{width:100%;filter:grayscale(1) contrast(1.05)}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+.field label{font-family:var(--display);font-weight:600;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--smoke-2)}
+.field input,.field textarea{font-family:var(--body);font-size:1rem;color:#131111;border:0;border-bottom:1px solid var(--line-dark);background:transparent;padding:11px 2px}
+.field input:focus,.field textarea:focus{outline:0;border-bottom-color:var(--red)}
+.col-form{display:flex;flex-direction:column;padding-bottom:clamp(70px,8vw,120px)}
+.col-form .offices{margin-top:auto}
+.offices{display:flex;flex-wrap:wrap;gap:34px;margin-top:42px;padding-top:24px;border-top:1px solid var(--line-dark)}
+.office .city{font-family:var(--display);font-weight:800;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase}
+.office .tel{font-size:.9rem;color:#3B3735}
+
+footer{background:var(--ink);padding-block:48px;border-top:1px solid var(--line)}
+.fbar{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
+.fbar small{color:var(--smoke-2);font-size:.78rem}
+.fbar a{color:var(--smoke);text-decoration:none;font-family:var(--display);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase}
+.fbar a:hover{color:#fff}
+
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .marquee,.qtrack{animation:none}
+  html{scroll-behavior:auto}
+}
+.note{background:var(--red);color:#fff;font-family:var(--display);font-weight:600;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;padding:9px var(--pad);text-align:center}
+</style>
+
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="STP Agency"><img loading="lazy" src="assets/img/stp-lockup.png" alt="STP Agency" width="96"></a>
+    <nav id="menu">
+      <a href="#agencia">Agencia</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#flow">Flow</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn" href="#contacto"><span class="dot"></span>Hablemos</a>
+    <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><i></i></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="wrap">
+      <img class="wordmark" src="assets/img/stp-logotipo.png" alt="Straight To The Point">
+      <div class="hero-copy">
+        <h1><span class="l1">Llegamos directo al punto,</span><span class="l2">Hacemos crecer tu marca.</span></h1>
+        <div class="hero-lede">
+          <p class="lede">Marketing integral pensado para ejecutar, no para adornar. Conectamos estrategia, creatividad, pauta, producción y data en un solo equipo que trabaja de la mano con tu negocio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="marquee">
+      <span class="mq"><img loading="lazy" src="assets/img/cliente-bessa.png" alt="Béssa Beauty" style="height:46px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-booty.png" alt="Booty Like an Apple" style="height:32px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-coco.png" alt="Coco" style="height:40px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-chateau.png" alt="Galerías Château Nordelta" style="height:48px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-imagem.png" alt="Imagem Films" style="height:46px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-kriza.png" alt="Kriza" style="height:54px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-level.png" alt="Level Training Club" style="height:32px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-puesto-viejo.png" alt="Puesto Viejo" style="height:48px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-rush.png" alt="Rush" style="height:32px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-sogni.png" alt="Sogni by Ecos" style="height:40px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-tudentista.png" alt="Tu Dentista Clinik" style="height:46px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-umbro.png" alt="Umbro" style="height:46px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-vitakids.png" alt="Vita Kids" style="height:46px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-asics.png" alt="Asics" style="height:40px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-bessa.png" alt="Béssa Beauty" style="height:46px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-booty.png" alt="Booty Like an Apple" style="height:32px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-coco.png" alt="Coco" style="height:40px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-chateau.png" alt="Galerías Château Nordelta" style="height:48px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-imagem.png" alt="Imagem Films" style="height:46px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-kriza.png" alt="Kriza" style="height:54px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-level.png" alt="Level Training Club" style="height:32px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-puesto-viejo.png" alt="Puesto Viejo" style="height:48px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-rush.png" alt="Rush" style="height:32px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-sogni.png" alt="Sogni by Ecos" style="height:40px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-tudentista.png" alt="Tu Dentista Clinik" style="height:46px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-umbro.png" alt="Umbro" style="height:46px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-vitakids.png" alt="Vita Kids" style="height:46px"></span><span class="mq"><img loading="lazy" src="assets/img/cliente-asics.png" alt="Asics" style="height:40px"></span>
+    </div>
+  </div>
+  </div>
+
+  <div class="quotes">
+    <div class="qtrack">
+      <figure class="qcard" style="--bg:url(assets/img/quote-asics.jpg)"><div class="qm">”</div><blockquote class="qtext">STP es una agencia que valoro y recomiendo, no solo por la calidad de gente que forma parte del equipo, si no también por su profesionalismo y su pasión que demuestran en todo lo que hacen. Su compromiso y creatividad se refleja en cada proyecto.</blockquote><figcaption class="qwho">Ángeles Bollini <span>· Marketing, ASICS</span></figcaption></figure>
+      <figure class="qcard" style="--bg:url(assets/img/quote-umbro.jpg)"><div class="qm">”</div><blockquote class="qtext">Llevamos trabajando con STP más de 5 años, y la experiencia ha sido muy buena. Alfonso y Laura, quienes lideran la agencia, siempre nos han brindado un trato excepcional y personalizado.</blockquote><figcaption class="qwho">Mercedes Marco del Pont <span>· Marketing, UMBRO</span></figcaption></figure>
+      <figure class="qcard" style="--bg:url(assets/img/quote-booty.jpg)"><div class="qm">”</div><blockquote class="qtext">Para mí ha sido sentir que tengo un equipo detrás de mi compañía que realmente la siente como propia y esto no tiene precio. Son organizados, profesionales, cumplen con lo que dicen y siempre siento que hay intención detrás de cada decisión.</blockquote><figcaption class="qwho">Nati <span>· Booty Like an Apple</span></figcaption></figure>
+      <figure class="qcard" style="--bg:url(assets/img/quote-imagem.jpg)"><div class="qm">”</div><blockquote class="qtext">Su equipo de profesionales ha demostrado una profunda comprensión de las necesidades de nuestra empresa y han colaborado estrechamente con nosotros para desarrollar una estrategia digital efectiva y alineada con nuestros objetivos comerciales.</blockquote><figcaption class="qwho">Jeremías Iannuzzi <span>· Marketing, Imagem Films</span></figcaption></figure>
+      <figure class="qcard" style="--bg:url(assets/img/quote-mesvol.jpg)"><div class="qm">”</div><blockquote class="qtext">Desde el primer día asumieron la marca como propia y aportaron siempre más de lo esperado. Sin duda, un aliado clave en nuestro crecimiento. Ninguna otra agencia se ha tomado el trabajo tan propio y dado estos resultados.</blockquote><figcaption class="qwho">Miguel Ruiz <span>· Gerente, Grupo Mesvol</span></figcaption></figure>
+      <figure class="qcard" style="--bg:url(assets/img/quote-sogni.jpg)"><div class="qm">”</div><blockquote class="qtext">Desde que comenzamos a trabajar con STP hemos visto un cambio radical en nuestra marca. Siempre con la mejor disposición y apoyo este equipo nos ha ayudado a crecer, mejorar y confiar en el proceso para lograr los objetivos que nos hemos propuesto. Gracias por todo equipo.</blockquote><figcaption class="qwho">Samantha Sesti <span>· CEO, Sogni</span></figcaption></figure>
+      <figure class="qcard" style="--bg:url(assets/img/quote-leah.jpg)"><div class="qm">”</div><blockquote class="qtext">He trabajado con STP en diferentes proyectos con enfoques muy variados en diferentes áreas que van desde lo educativo hasta proyectos web 3 y con servicios desde el diseño de piezas y marcas hasta creación y ejecución de estrategias de marketing. Puedo resaltar su compromiso, puntualidad, honestidad y excelente trabajo.</blockquote><figcaption class="qwho">Camilo Sardi <span>· CEO, LEAH APP</span></figcaption></figure>
+      <figure class="qcard" style="--bg:url(assets/img/quote-level.jpg)"><div class="qm">”</div><blockquote class="qtext">Su compromiso, creatividad y atención han superado nuestras expectativas. Más que una agencia, los sentimos parte de nuestro equipo y de la familia.</blockquote><figcaption class="qwho">Úrsula D'amico <span>· Gerente de Marketing, LEVEL</span></figcaption></figure>
+      <figure class="qcard" style="--bg:url(assets/img/quote-asics.jpg)"><div class="qm">”</div><blockquote class="qtext">STP es una agencia que valoro y recomiendo, no solo por la calidad de gente que forma parte del equipo, si no también por su profesionalismo y su pasión que demuestran en todo lo que hacen. Su compromiso y creatividad se refleja en cada proyecto.</blockquote><figcaption class="qwho">Ángeles Bollini <span>· Marketing, ASICS</span></figcaption></figure>
+      <figure class="qcard" style="--bg:url(assets/img/quote-umbro.jpg)"><div class="qm">”</div><blockquote class="qtext">Llevamos trabajando con STP más de 5 años, y la experiencia ha sido muy buena. Alfonso y Laura, quienes lideran la agencia, siempre nos han brindado un trato excepcional y personalizado.</blockquote><figcaption class="qwho">Mercedes Marco del Pont <span>· Marketing, UMBRO</span></figcaption></figure>
+      <figure class="qcard" style="--bg:url(assets/img/quote-booty.jpg)"><div class="qm">”</div><blockquote class="qtext">Para mí ha sido sentir que tengo un equipo detrás de mi compañía que realmente la siente como propia y esto no tiene precio. Son organizados, profesionales, cumplen con lo que dicen y siempre siento que hay intención detrás de cada decisión.</blockquote><figcaption class="qwho">Nati <span>· Booty Like an Apple</span></figcaption></figure>
+      <figure class="qcard" style="--bg:url(assets/img/quote-imagem.jpg)"><div class="qm">”</div><blockquote class="qtext">Su equipo de profesionales ha demostrado una profunda comprensión de las necesidades de nuestra empresa y han colaborado estrechamente con nosotros para desarrollar una estrategia digital efectiva y alineada con nuestros objetivos comerciales.</blockquote><figcaption class="qwho">Jeremías Iannuzzi <span>· Marketing, Imagem Films</span></figcaption></figure>
+      <figure class="qcard" style="--bg:url(assets/img/quote-mesvol.jpg)"><div class="qm">”</div><blockquote class="qtext">Desde el primer día asumieron la marca como propia y aportaron siempre más de lo esperado. Sin duda, un aliado clave en nuestro crecimiento. Ninguna otra agencia se ha tomado el trabajo tan propio y dado estos resultados.</blockquote><figcaption class="qwho">Miguel Ruiz <span>· Gerente, Grupo Mesvol</span></figcaption></figure>
+      <figure class="qcard" style="--bg:url(assets/img/quote-sogni.jpg)"><div class="qm">”</div><blockquote class="qtext">Desde que comenzamos a trabajar con STP hemos visto un cambio radical en nuestra marca. Siempre con la mejor disposición y apoyo este equipo nos ha ayudado a crecer, mejorar y confiar en el proceso para lograr los objetivos que nos hemos propuesto. Gracias por todo equipo.</blockquote><figcaption class="qwho">Samantha Sesti <span>· CEO, Sogni</span></figcaption></figure>
+      <figure class="qcard" style="--bg:url(assets/img/quote-leah.jpg)"><div class="qm">”</div><blockquote class="qtext">He trabajado con STP en diferentes proyectos con enfoques muy variados en diferentes áreas que van desde lo educativo hasta proyectos web 3 y con servicios desde el diseño de piezas y marcas hasta creación y ejecución de estrategias de marketing. Puedo resaltar su compromiso, puntualidad, honestidad y excelente trabajo.</blockquote><figcaption class="qwho">Camilo Sardi <span>· CEO, LEAH APP</span></figcaption></figure>
+      <figure class="qcard" style="--bg:url(assets/img/quote-level.jpg)"><div class="qm">”</div><blockquote class="qtext">Su compromiso, creatividad y atención han superado nuestras expectativas. Más que una agencia, los sentimos parte de nuestro equipo y de la familia.</blockquote><figcaption class="qwho">Úrsula D'amico <span>· Gerente de Marketing, LEVEL</span></figcaption></figure>
+    </div>
+  </div>
+
+  <section id="agencia" class="tex tex-slats">
+    <div class="wrap agency">
+      <div class="rv">
+        <div class="marker"><i></i><span>La agencia</span></div>
+        <h2>Seis años acompañando marcas a escala real</h2>
+        <p class="lede" style="margin-top:26px">Traducimos la complejidad del marketing en un plan claro y ejecutable. Nos involucramos tanto en el día a día que terminamos operando como una extensión natural de tu propio equipo.</p>
+      </div>
+      <div class="mosaic rv">
+        <div class="tile t-red"><div class="meta"><div class="lab">Proyectos por año</div><div class="desc">Transformamos lo complejo en una estrategia clara y memorable.</div></div><div class="big">+20</div></div>
+        <div class="tile t-ash"><div class="meta"><div class="lab">Países</div><div class="desc">Cultura local con criterio y alcance regional.</div></div><div class="big">+5</div></div>
+        <div class="tile t-paper"><div class="meta"><div class="lab">Frentes de trabajo</div><div class="desc">Un solo equipo multidisciplinario, con expertos en cada área.</div></div><div class="big">7</div></div>
+        <div class="tile t-deep"><div class="meta"><div class="lab">Años como agencia</div><div class="desc">Experiencia real adaptada a la velocidad del mercado.</div></div><div class="big">+6</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="wrap">
+      <div class="rv" style="max-width:74ch;margin-bottom:clamp(38px,5vw,58px)">
+        <div class="marker"><i></i><span>Servicios</span></div>
+        <h2>Todo el ecosistema, un solo equipo</h2>
+      </div>
+      <div class="svc rv">
+        <div class="slist" id="slist"></div>
+        <div class="spanel">
+          <div class="sframe" id="sframe"></div>
+          <div class="scopy" id="scopy"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="flow" class="tex tex-white sec-light">
+    <div class="wrap">
+      <div class="rv" style="max-width:74ch;margin-bottom:clamp(38px,5vw,58px)">
+        <div class="marker"><i></i><span>Proceso</span></div>
+        <h2>Nuestro flow creativo</h2>
+      </div>
+      <div class="tl rv">
+        <div class="tl-col">
+          <div class="tl-head">Investigación</div>
+          <article class="tl-card"><div class="n">01</div><h3>Investigamos</h3><p class="tl-txt">Leemos el terreno, a tu audiencia y a tu competencia para entender dónde está la oportunidad real.</p></article>
+        </div>
+        <div class="tl-col">
+          <div class="tl-head">Definición</div>
+          <article class="tl-card"><div class="n">02</div><h3>Definimos</h3><p class="tl-txt">Aterrizamos el concepto, la estrategia y armamos un plan de acción concreto y aplicado a la realidad de tu marca.</p></article>
+        </div>
+        <div class="tl-col">
+          <div class="tl-head">Activación</div>
+          <article class="tl-card"><div class="n">03</div><h3>Activamos</h3><p class="tl-txt">Encendemos el motor: campañas 360°, ecosistema digital, pauta y acciones en calle.</p></article>
+        </div>
+        <div class="tl-col">
+          <div class="tl-head">Medición</div>
+          <article class="tl-card"><div class="n">04</div><h3>Medimos</h3><p class="tl-txt">Leemos data en tiempo real, ajustamos lo que haga falta y optimizamos para seguir creciendo.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="data" class="tex tex-sand">
+    <div class="wrap data">
+      <div class="rv">
+        <div class="marker"><i></i><span>Data</span></div>
+        <h2>Tableros hechos con IA a medida de tu negocio</h2>
+        <p class="lede" style="margin-top:26px">Desarrollamos tableros a medida conectados a tus plataformas digitales. Sin reportes infinitos de Excel ni métricas vanidosas: un panel claro para que tú y nuestro equipo tomemos decisiones mirando exactamente los mismos números.</p>
+      </div>
+      <div class="rv">
+        <div class="scene" aria-hidden="true">
+          <div class="deck">
+            <div class="pane pane-main">
+              <div class="rail"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+              <div class="pmain">
+                <div class="ptop"><b>Panel STP</b><span>Últimos 7 días</span></div>
+                <div class="prow">
+                  <div class="pkpi"><div class="k">Inversión</div><div class="v">$48.200</div></div>
+                  <div class="pkpi"><div class="k">Leads</div><div class="v">1.554</div></div>
+                  <div class="pkpi"><div class="k">Costo x lead</div><div class="v">$3,10<em>-12%</em></div></div>
+                </div>
+                <div class="chart">
+                  <i style="height:34%"></i><i style="height:48%"></i><i style="height:41%"></i>
+                  <i style="height:62%"></i><i style="height:55%"></i><i style="height:74%"></i>
+                  <i style="height:68%"></i><i class="hi" style="height:100%"></i>
+                </div>
+                <div class="axis"><span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span><span>Hoy</span></div>
+              </div>
+            </div>
+            <div class="pane float f1"><div class="k">Retorno</div><div class="v">4,7×</div><div class="spark"><i style="height:40%"></i><i style="height:56%"></i><i style="height:48%"></i><i style="height:72%"></i><i style="height:100%"></i></div></div>
+            <div class="pane float f2"><div class="k">Meta del trimestre</div><div class="ring"><b>68%</b></div></div>
+            <div class="pane float f3"><div class="k">Alcance</div><div class="v">2,1 M</div></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact" id="contacto">
+    <div class="wrap inner">
+      <div class="rv col-text">
+        <div class="marker"><i></i><span>Contacto</span></div>
+        <h2>Cuéntanos qué te está frenando</h2>
+        <p class="lede" style="margin-top:24px">Escríbenos y te respondemos con una primera lectura del problema. Sin presentación de 40 slides.</p>
+      </div>
+      <div class="rv col-form">
+        <form id="form-contacto" action="ENDPOINT_PENDIENTE" method="POST">
+          <div class="field"><label for="n">Nombre</label><input id="n" type="text" autocomplete="name"></div>
+          <div class="field"><label for="e">Email</label><input id="e" type="email" autocomplete="email"></div>
+          <div class="field"><label for="m">Mensaje</label><textarea id="m" rows="4"></textarea></div>
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+        <div class="offices">
+          <div class="office"><div class="city">Buenos Aires</div><div class="tel">+54 9 11 2578 6369</div></div>
+          <div class="office"><div class="city">Caracas</div><div class="tel">+58 412 900 7404</div></div>
+          <div class="office"><div class="city">Email</div><div class="tel">hello@stptheagency.com</div></div>
+        </div>
+      </div>
+      <div class="dogwrap"><img loading="lazy" src="assets/img/perro.webp" alt="Perro negro mirando a cámara, mascota de STP Agency"></div>
+    </div>
+  </section>
+
+</main>
+<script>
+(function(){
+  var f = document.getElementById("form-contacto");
+  if (!f) return;
+  var boton = f.querySelector(".btn");
+  var aviso = document.createElement("p");
+  aviso.style.cssText = "margin:14px 0 0;font-size:.85rem;color:#5B5654";
+  f.appendChild(aviso);
+  f.addEventListener("submit", function(e){
+    if (f.getAttribute("action") === "ENDPOINT_PENDIENTE") {
+      e.preventDefault();
+      aviso.textContent = "El formulario todav\u00eda no est\u00e1 conectado. Escr\u00edbenos a hello@stptheagency.com";
+      return;
+    }
+    e.preventDefault();
+    boton.disabled = true; boton.textContent = "Enviando";
+    fetch(f.action, { method: "POST", body: new FormData(f), headers: { Accept: "application/json" } })
+      .then(function(r){
+        if (r.ok) { f.reset(); boton.textContent = "Mensaje enviado"; aviso.textContent = "Te respondemos en menos de 24 horas."; }
+        else { throw new Error(r.status); }
+      })
+      .catch(function(){
+        boton.disabled = false; boton.textContent = "Enviar";
+        aviso.textContent = "No se pudo enviar. Escr\u00edbenos a hello@stptheagency.com";
+      });
+  });
+})();
+</script>
+<script>
+/* menu movil */
+(function(){
+  var b=document.querySelector('.burger'), nav=document.getElementById('menu');
+  if(!b||!nav) return;
+  function cerrar(){document.body.classList.remove('menu-open');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Abrir menu')}
+  b.addEventListener('click',function(){
+    var abierto=document.body.classList.toggle('menu-open');
+    b.setAttribute('aria-expanded',abierto?'true':'false');
+    b.setAttribute('aria-label',abierto?'Cerrar menu':'Abrir menu');
+  });
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A') cerrar()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape') cerrar()});
+  window.addEventListener('resize',function(){if(window.innerWidth>960) cerrar()});
+})();
+</script>
+
+
+<footer>
+  <div class="wrap fbar">
+    <small>© 2026 Straight To The Point. Todos los derechos reservados.</small>
+    <a href="#top">Volver arriba</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv,.tl');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.06});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+
+<script>
+const SVC=[
+ ["Consultoría de marketing integral","assets/img/servicio-consultoria.jpg","Definimos hacia dónde va tu marca y cómo llegar ahí sin dar rodeos. Diseñamos la propuesta de valor y desarrollamos estrategias de crecimiento escalables.",["Propuesta de valor","Plan de crecimiento","MKT Funnel","Benchmark","Audiencias"]],
+ ["Social Media Management","assets/img/servicio-social.jpg","Construimos y gestionamos la presencia diaria de tu marca en redes sociales con estrategia e innovación. Planificación, redacción de contenidos e interacción activa con la comunidad para transformar seguidores en clientes reales.",["Estrategia de contenidos","Calendario de comunicación","Community management","Social listening"]],
+ ["Digital paid media","assets/img/servicio-paid-media.jpg","Inversión en medios digitales enfocada en el rendimiento. Optimizamos presupuesto y medios en tiempo real.",["Meta Ads","Google Ads","Programática","Display","Branded Content","Streaming"]],
+ ["Branding","assets/img/servicio-branding.jpg","Construimos de cero marcas sólidas y memorables, con personalidad, voz y coherencia visual.",["Naming","Identidad","Sistema visual","Narrativa","Manual de marca"]],
+ ["Marketing offline","assets/img/servicio-offline.jpg","Llevamos tu marca a la calle. Eventos, campañas de vía pública y activaciones pensadas para que la gente conecte con tu producto en el mundo real.",["Vía pública","Eventos","Prensa","Activaciones"]],
+ ["Producción de contenidos","assets/img/servicio-produccion.jpg","Contenido visual directo, estético y con intención. Producimos video, foto y formatos UGC que detienen el scroll.",["Video","Fotografía","AI Content","Motion Graphics","UGC"]],
+ ["Desarrollo web","assets/img/servicio-web.jpg","Sitios web de alto impacto y pensados para convertir. Desarrollo técnico limpio y analítica conectada desde el día uno, que garantiza el control total.",["WordPress","Shopify","Landing pages","Analytics"]],
+ ["PR & influencers","assets/img/servicio-pr.jpg","Conectamos tu marca con creadores y medios por afinidad real. Gestionamos y medimos el impacto real de cada colaboración.",["Research","Negociación","Analytics","Reporte"]]
+];
+(function(){
+ const L=document.getElementById('slist'),F=document.getElementById('sframe'),C=document.getElementById('scopy'),I=[];
+ SVC.forEach((d,i)=>{
+   const b=document.createElement('button');
+   b.className='sitem'+(i?'':' on');b.type='button';b.dataset.i=i;
+   b.innerHTML='<span class="n">0'+(i+1)+'</span><span class="name">'+d[0]+'</span><span class="arrow"></span>';
+   L.appendChild(b);
+   const m=document.createElement('div');m.className='sbody';
+   m.innerHTML='<img loading="lazy" src="'+d[1]+'" alt=""><p>'+d[2]+'</p>';L.appendChild(m);
+   const im=new Image();im.src=d[1];im.alt='';if(!i)im.className='on';F.appendChild(im);I.push(im);
+ });
+ function show(i){
+   L.querySelectorAll('.sitem').forEach(el=>el.classList.toggle('on',+el.dataset.i===i));
+   I.forEach((im,k)=>im.classList.toggle('on',k===i));
+   const d=SVC[i];
+   C.innerHTML='<div class="sfade"><p>'+d[2]+'</p><ul class="lines">'+d[3].map(x=>'<li>'+x+'</li>').join('')+'</ul></div>';
+ }
+ L.addEventListener('mouseover',e=>{const b=e.target.closest('.sitem');if(b)show(+b.dataset.i)});
+ L.addEventListener('click',e=>{const b=e.target.closest('.sitem');if(b)show(+b.dataset.i)});
+ show(0);
+})();
+</script>
+
+</body>
