@@ -666,7 +666,7 @@ footer{background:var(--ink);padding-block:48px;border-top:1px solid var(--line)
   f.addEventListener("submit", function(e){
     if (f.getAttribute("action") === "ENDPOINT_PENDIENTE") {
       e.preventDefault();
-      aviso.textContent = "El formulario todavía no está conectado. Escríbenos a hello@stptheagency.com";
+      aviso.textContent = "El formulario todav\u00eda no est\u00e1 conectado. Escr\u00edbenos a hello@stptheagency.com";
       return;
     }
     e.preventDefault();
@@ -678,7 +678,7 @@ footer{background:var(--ink);padding-block:48px;border-top:1px solid var(--line)
       })
       .catch(function(){
         boton.disabled = false; boton.textContent = "Enviar";
-        aviso.textContent = "No se pudo enviar. Escríbenos a hello@stptheagency.com";
+        aviso.textContent = "No se pudo enviar. Escr\u00edbenos a hello@stptheagency.com";
       });
   });
 })();
@@ -720,7 +720,7 @@ footer{background:var(--ink);padding-block:48px;border-top:1px solid var(--line)
 <script>
 const SVC=[
  ["Consultoría de marketing integral","assets/img/servicio-consultoria.jpg","Definimos hacia dónde va tu marca y cómo llegar ahí sin dar rodeos. Diseñamos la propuesta de valor y desarrollamos estrategias de crecimiento escalables.",["Propuesta de valor","Plan de crecimiento","MKT Funnel","Benchmark","Audiencias"]],
- ["Social Media Management","assets/img/servicio-pr.jpg","Construimos y gestionamos la presencia diaria de tu marca en redes sociales con estrategia e innovación. Planificación, redacción de contenidos e interacción activa con la comunidad para transformar seguidores en clientes reales.",["Estrategia de contenidos","Calendario de comunicación","Community management","Social listening"]],
+ ["Social Media Management","assets/img/servicio-social.jpg","Construimos y gestionamos la presencia diaria de tu marca en redes sociales con estrategia e innovación. Planificación, redacción de contenidos e interacción activa con la comunidad para transformar seguidores en clientes reales.",["Estrategia de contenidos","Calendario de comunicación","Community management","Social listening"]],
  ["Digital paid media","assets/img/servicio-paid-media.jpg","Inversión en medios digitales enfocada en el rendimiento. Optimizamos presupuesto y medios en tiempo real.",["Meta Ads","Google Ads","Programática","Display","Branded Content","Streaming"]],
  ["Branding","assets/img/servicio-branding.jpg","Construimos de cero marcas sólidas y memorables, con personalidad, voz y coherencia visual.",["Naming","Identidad","Sistema visual","Narrativa","Manual de marca"]],
  ["Marketing offline","assets/img/servicio-offline.jpg","Llevamos tu marca a la calle. Eventos, campañas de vía pública y activaciones pensadas para que la gente conecte con tu producto en el mundo real.",["Vía pública","Eventos","Prensa","Activaciones"]],
@@ -750,3 +750,5 @@ const SVC=[
  show(0);
 })();
 </script>
+
+</body>
